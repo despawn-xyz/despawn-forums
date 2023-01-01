@@ -5,12 +5,12 @@ namespace Despawn\Providers;
 use Despawn\Models\Comment;
 use Despawn\Models\Thread;
 use Despawn\Models\User;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\ServiceProvider;
 use Despawn\Observers\CommentObserver;
 use Despawn\Observers\ThreadObserver;
 use Despawn\Observers\UserObserver;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\ServiceProvider;
 
 class DespawnForumServiceProvider extends ServiceProvider
 {
@@ -81,7 +81,6 @@ class DespawnForumServiceProvider extends ServiceProvider
             throw_if(! isset($thread?->board), (new ModelNotFoundException)->setModel(Thread::class));
 
             throw_if(! isset($thread?->board->category), (new ModelNotFoundException)->setModel(Thread::class));
-
 
             return $thread ?? throw (new ModelNotFoundException)->setModel(Thread::class);
         });
