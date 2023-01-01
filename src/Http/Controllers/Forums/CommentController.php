@@ -8,8 +8,6 @@ use Despawn\Http\Requests\Forums\Comment\CommentUpdateRequest;
 use Despawn\Models\Comment;
 use Despawn\Models\Thread;
 use Illuminate\Http\Request;
-use function Despawn\Http\Controllers\Forums\back;
-use function Despawn\Http\Controllers\Forums\to_route;
 
 class CommentController extends Controller
 {
