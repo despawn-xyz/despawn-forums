@@ -1,0 +1,43 @@
+{
+    "name": "noclip-gg/despawn-forums",
+    "description": "Forums module for Despawn",
+    "authors": [
+        {
+            "name": "robertdennis",
+            "email": "robertdennispersonal@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Despawn\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "pint": "pint"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Despawn\\Providers\\DespawnForumServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "tightenco/ziggy": "^1.5"
+    }
+}
