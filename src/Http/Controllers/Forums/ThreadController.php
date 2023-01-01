@@ -9,7 +9,6 @@ use Despawn\Models\Board;
 use Despawn\Models\Thread;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
-use function Despawn\Http\Controllers\Forums\to_route;
 
 class ThreadController extends Controller
 {

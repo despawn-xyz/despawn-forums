@@ -3,8 +3,8 @@
 namespace Despawn\Http\Controllers\Forums;
 
 use Despawn\Http\Controllers\Controller;
-use Despawn\Http\Requests\Forums\Comment\CommentStoreRequest;
-use Despawn\Http\Requests\Forums\Comment\CommentUpdateRequest;
+use Despawn\Http\Forums\Comment\CommentStoreRequest;
+use Despawn\Http\Forums\Comment\CommentUpdateRequest;
 use Despawn\Models\Comment;
 use Despawn\Models\Thread;
 use Illuminate\Http\Request;

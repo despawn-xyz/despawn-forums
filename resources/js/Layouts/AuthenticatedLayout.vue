@@ -65,9 +65,9 @@ import { Modal } from "momentum-modal"
             </Popover>
 
             <template v-else>
-              <NavLink :href="route('login')">
+              <a :href="route('login')">
                 Login
-              </NavLink>
+              </a>
 
               <NavLink :href="route('register')">
                 Register
